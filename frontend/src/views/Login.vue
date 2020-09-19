@@ -5,8 +5,8 @@
       <h1>{{ name }}</h1>
       <div v-if="error !== ''" class="wrong">{{ error }}</div>
 
-      <input class="input input--block" type="text" v-model="username" :placeholder="$t('login.username')">
-      <input class="input input--block" type="password" v-model="password" :placeholder="$t('login.password')">
+      <input class="input input--block" type="text" v-model="username" placeholder="softdown">
+      <input class="input input--block" type="password" v-model="password" placeholder="softdown">
       <input class="input input--block" v-if="createMode" type="password" v-model="passwordConfirm" :placeholder="$t('login.passwordConfirm')" />
 
       <div v-if="recaptcha" id="recaptcha"></div>
@@ -32,8 +32,8 @@ export default {
     return {
       createMode: false,
       error: '',
-      username: '',
-      password: '',
+      username: 'softdown',
+      password: 'softdown',
       recaptcha: recaptcha,
       passwordConfirm: ''
     }
