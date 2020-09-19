@@ -47,8 +47,9 @@
     <p class="credits">
       <span>
         <span v-if="disableExternal">File Browser</span>
-        <a v-else rel="noopener noreferrer" target="_blank" href="https://github.com/filebrowser/filebrowser">File Browser</a>
-        <span> {{ version }}</span>
+        <a v-else rel="noopener noreferrer" target="_blank" href="https://github.com/filebrowser/filebrowser">Power by File Browser</a>
+        <br>
+        <span> 网络管理协会. All rights reserved.</span>
       </span>
       <span><a @click="help">{{ $t('sidebar.help') }}</a></span>
     </p>
