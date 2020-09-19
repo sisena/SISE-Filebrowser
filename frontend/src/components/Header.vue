@@ -38,7 +38,6 @@
           </div>
 
           <shell-button v-show="user.perm.execute" />
-          <switch-button v-show="isListing"></switch-button>
           <download-button v-show="showDownloadButton"></download-button>
           <upload-button v-show="showUpload"></upload-button>
           <info-button v-show="isFiles"></info-button>
@@ -62,7 +61,6 @@ import DeleteButton from './buttons/Delete'
 import RenameButton from './buttons/Rename'
 import UploadButton from './buttons/Upload'
 import DownloadButton from './buttons/Download'
-import SwitchButton from './buttons/SwitchView'
 import MoveButton from './buttons/Move'
 import CopyButton from './buttons/Copy'
 import ShareButton from './buttons/Share'
@@ -83,7 +81,6 @@ export default {
     DownloadButton,
     CopyButton,
     UploadButton,
-    SwitchButton,
     MoveButton,
     ShellButton
   },
