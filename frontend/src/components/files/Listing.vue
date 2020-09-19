@@ -15,31 +15,19 @@
         <div>
           <p :class="{ active: nameSorted }" class="name"
             role="button"
-            tabindex="0"
-            @click="sort('name')"
-            :title="$t('files.sortByName')"
-            :aria-label="$t('files.sortByName')">
+            tabindex="0">
             <span>{{ $t('files.name') }}</span>
-            <i class="material-icons">{{ nameIcon }}</i>
           </p>
 
           <p :class="{ active: sizeSorted }" class="size"
             role="button"
-            tabindex="0"
-            @click="sort('size')"
-            :title="$t('files.sortBySize')"
-            :aria-label="$t('files.sortBySize')">
+            tabindex="0">
             <span>{{ $t('files.size') }}</span>
-            <i class="material-icons">{{ sizeIcon }}</i>
           </p>
           <p :class="{ active: modifiedSorted }" class="modified"
             role="button"
-            tabindex="0"
-            @click="sort('modified')"
-            :title="$t('files.sortByLastModified')"
-            :aria-label="$t('files.sortByLastModified')">
+            tabindex="0">
             <span>{{ $t('files.lastModified') }}</span>
-            <i class="material-icons">{{ modifiedIcon }}</i>
           </p>
         </div>
       </div>
