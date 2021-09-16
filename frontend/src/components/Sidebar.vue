@@ -82,19 +82,20 @@
 
     <p class="credits">
       <span>
-        <span v-if="disableExternal">File Browser</span>
+        <span>网络管理中心. All rights reserved.</span>
+        <br />
         <a
-          v-else
           rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/filebrowser/filebrowser"
-          >File Browser</a
         >
-        <span> {{ version }}</span>
+          Power by File Browser</a
+        >
+        <!--        <span> {{ version }}</span>-->
       </span>
-      <span
-        ><a @click="help">{{ $t("sidebar.help") }}</a></span
-      >
+      <!--      <span-->
+      <!--        ><a @click="help">{{ $t("sidebar.help") }}</a></span-->
+      <!--      >-->
     </p>
   </nav>
 </template>
