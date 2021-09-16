@@ -321,12 +321,12 @@ func quickSetup(flags *pflag.FlagSet, d pythonData) {
 			SingleClick: false,
 			Perm: users.Permissions{
 				Admin:    false,
-				Execute:  true,
-				Create:   true,
-				Rename:   true,
-				Modify:   true,
-				Delete:   true,
-				Share:    true,
+				Execute:  false,
+				Create:   false,
+				Rename:   false,
+				Modify:   false,
+				Delete:   false,
+				Share:    false,
 				Download: true,
 			},
 		},
@@ -377,7 +377,7 @@ func quickSetup(flags *pflag.FlagSet, d pythonData) {
 	}
 
 	set.Defaults.Apply(user)
-	user.Perm.Admin = true
+	user.Perm.Admin = false
 
 	err = d.store.Users.Save(user)
 	checkErr(err)
