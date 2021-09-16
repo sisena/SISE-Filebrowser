@@ -33,29 +33,29 @@
         </button>
       </div>
 
-      <div>
-        <router-link
-          class="action"
-          to="/settings"
-          :aria-label="$t('sidebar.settings')"
-          :title="$t('sidebar.settings')"
-        >
-          <i class="material-icons">settings_applications</i>
-          <span>{{ $t("sidebar.settings") }}</span>
-        </router-link>
+      <!--      <div>-->
+      <!--        <router-link-->
+      <!--          class="action"-->
+      <!--          to="/settings"-->
+      <!--          :aria-label="$t('sidebar.settings')"-->
+      <!--          :title="$t('sidebar.settings')"-->
+      <!--        >-->
+      <!--          <i class="material-icons">settings_applications</i>-->
+      <!--          <span>{{ $t("sidebar.settings") }}</span>-->
+      <!--        </router-link>-->
 
-        <button
-          v-if="authMethod == 'json'"
-          @click="logout"
-          class="action"
-          id="logout"
-          :aria-label="$t('sidebar.logout')"
-          :title="$t('sidebar.logout')"
-        >
-          <i class="material-icons">exit_to_app</i>
-          <span>{{ $t("sidebar.logout") }}</span>
-        </button>
-      </div>
+      <!--        <button-->
+      <!--          v-if="authMethod == 'json'"-->
+      <!--          @click="logout"-->
+      <!--          class="action"-->
+      <!--          id="logout"-->
+      <!--          :aria-label="$t('sidebar.logout')"-->
+      <!--          :title="$t('sidebar.logout')"-->
+      <!--        >-->
+      <!--          <i class="material-icons">exit_to_app</i>-->
+      <!--          <span>{{ $t("sidebar.logout") }}</span>-->
+      <!--        </button>-->
+      <!--      </div>-->
     </template>
     <template v-else>
       <router-link

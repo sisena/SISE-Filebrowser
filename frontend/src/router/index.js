@@ -4,12 +4,12 @@ import Login from "@/views/AutoLogin";
 import Layout from "@/views/Layout";
 import Files from "@/views/Files";
 import Share from "@/views/Share";
-import Users from "@/views/settings/Users";
-import User from "@/views/settings/User";
-import Settings from "@/views/Settings";
-import GlobalSettings from "@/views/settings/Global";
-import ProfileSettings from "@/views/settings/Profile";
-import Shares from "@/views/settings/Shares";
+// import Users from "@/views/settings/Users";
+// import User from "@/views/settings/User";
+// import Settings from "@/views/Settings";
+// import GlobalSettings from "@/views/settings/Global";
+// import ProfileSettings from "@/views/settings/Profile";
+// import Shares from "@/views/settings/Shares";
 import Errors from "@/views/Errors";
 import store from "@/store";
 import { baseURL } from "@/utils/constants";
@@ -50,53 +50,53 @@ const router = new Router({
             requiresAuth: true,
           },
         },
-        {
-          path: "/settings",
-          name: "Settings",
-          component: Settings,
-          redirect: {
-            path: "/settings/profile",
-          },
-          meta: {
-            requiresAuth: true,
-          },
-          children: [
-            {
-              path: "/settings/profile",
-              name: "Profile Settings",
-              component: ProfileSettings,
-            },
-            {
-              path: "/settings/shares",
-              name: "Shares",
-              component: Shares,
-            },
-            {
-              path: "/settings/global",
-              name: "Global Settings",
-              component: GlobalSettings,
-              meta: {
-                requiresAdmin: true,
-              },
-            },
-            {
-              path: "/settings/users",
-              name: "Users",
-              component: Users,
-              meta: {
-                requiresAdmin: true,
-              },
-            },
-            {
-              path: "/settings/users/*",
-              name: "User",
-              component: User,
-              meta: {
-                requiresAdmin: true,
-              },
-            },
-          ],
-        },
+        // {
+        //   path: "/settings",
+        //   name: "Settings",
+        //   component: Settings,
+        //   redirect: {
+        //     path: "/settings/profile",
+        //   },
+        //   meta: {
+        //     requiresAuth: true,
+        //   },
+        //   children: [
+        //     {
+        //       path: "/settings/profile",
+        //       name: "Profile Settings",
+        //       component: ProfileSettings,
+        //     },
+        //     {
+        //       path: "/settings/shares",
+        //       name: "Shares",
+        //       component: Shares,
+        //     },
+        //     {
+        //       path: "/settings/global",
+        //       name: "Global Settings",
+        //       component: GlobalSettings,
+        //       meta: {
+        //         requiresAdmin: true,
+        //       },
+        //     },
+        //     {
+        //       path: "/settings/users",
+        //       name: "Users",
+        //       component: Users,
+        //       meta: {
+        //         requiresAdmin: true,
+        //       },
+        //     },
+        //     {
+        //       path: "/settings/users/*",
+        //       name: "User",
+        //       component: User,
+        //       meta: {
+        //         requiresAdmin: true,
+        //       },
+        //     },
+        //   ],
+        // },
         {
           path: "/403",
           name: "Forbidden",
