@@ -3,7 +3,7 @@ import Router from "vue-router";
 import Login from "@/views/AutoLogin";
 import Layout from "@/views/Layout";
 import Files from "@/views/Files";
-import Share from "@/views/Share";
+// import Share from "@/views/Share";
 // import Users from "@/views/settings/Users";
 // import User from "@/views/settings/User";
 // import Settings from "@/views/Settings";
@@ -37,11 +37,11 @@ const router = new Router({
       path: "/*",
       component: Layout,
       children: [
-        {
-          path: "/share/*",
-          name: "Share",
-          component: Share,
-        },
+        // {
+        //   path: "/share/*",
+        //   name: "Share",
+        //   component: Share,
+        // },
         {
           path: "/files/*",
           name: "Files",
