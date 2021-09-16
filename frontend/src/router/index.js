@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Login from "@/views/Login";
+import Login from "@/views/AutoLogin";
 import Layout from "@/views/Layout";
 import Files from "@/views/Files";
 import Share from "@/views/Share";
