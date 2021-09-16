@@ -52,11 +52,11 @@
           :label="$t('buttons.shell')"
           @action="$store.commit('toggleShell')"
         />
-        <action
-          :icon="user.viewMode === 'mosaic' ? 'view_list' : 'view_module'"
-          :label="$t('buttons.switchView')"
-          @action="switchView"
-        />
+        <!--        <action-->
+        <!--          :icon="user.viewMode === 'mosaic' ? 'view_list' : 'view_module'"-->
+        <!--          :label="$t('buttons.switchView')"-->
+        <!--          @action="switchView"-->
+        <!--        />-->
         <action
           v-if="headerButtons.download"
           icon="file_download"
